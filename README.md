@@ -108,5 +108,46 @@ Tudo isso fica registrado na seção "Qualidade dos dados" de cada relatório
 
 ## Planilha de acompanhamento (Google Sheets)
 
+**Configuração do Google Sheets
+
+Este projeto integra totalmente com o Google Sheets para registrar os resultados dos testes A/B em tempo real. A planilha já está conectada ao código e receberá os dados automaticamente quando você executar o script.
+
+### Importante: Segurança
+
+Por questões de segurança, **não é possível disponibilizar o arquivo de credenciais (.json) diretamente no GitHub**. Portanto, você precisará configurar suas próprias credenciais para que a escrita funcione. Caso necessário posso enviar o arquivo .json por email ou algum outro canal de comunicação.
+
+---
+
+## Passo a passo para configurar
+
+A seguir está um passo a passo de como fiz para configurar e integrar a planilha do Google Sheets com meu código. Estarei usando as chaves/nomes verdadeiros, uma vez que sem o arquivo .json não há problemas de compartilhar a planilha apenas para leitura.
+
+### 1. Crie suas credenciais no Google Cloud
+
+1. Acesse [Google Cloud Console](https://console.cloud.google.com)
+2. Crie um novo projeto (ex: `growth-ab-analyzer`)
+3. Ative a **Google Sheets API**
+4. Vá em **IAM e Administrador** → **Contas de serviço**
+5. Crie uma conta de serviço (ex: `ab-analyzer-bot`)
+6. Na aba **Chaves**, crie uma nova chave no formato **JSON**
+7. O arquivo será baixado automaticamente — **guarde-o em local seguro**
+
+### 2. Compartilhe a planilha com a Service Account
+
+1. Abra a planilha que você usará para registrar os resultados
+2. Clique em **Compartilhar** (canto superior direito)
+3. Adicione o e-mail da Service Account (está no arquivo .json baixado, campo `client_email`)
+4. Dê permissão de **Editor**
+5. Clique em **Enviar**
+
+### 3. Configure as variáveis de ambiente no seu computador
+
+No terminal, dentro da pasta do projeto:
+
+```bash
+# Linux
+export GOOGLE_SHEETS_CREDENTIALS_JSON="growth-ab-analyzer-06346ea220d8.json"
+export GOOGLE_SHEETS_SPREADSHEET_ID="1zbyb6wo8A_x-2ESdf7S3cyeWIgSWepK2x4Ht00AynzQ"
+
 **Link da planilha do Google Sheets:**
-`[https://docs.google.com/spreadsheets/d/1zbyb6wo8A_x-2ESdf7S3cyeWIgSWepK2x4Ht00AynzQ/edit?usp=sharing]`
+`[https://docs.google.com/spreadsheets/d/1zbyb6wo8A_x-2ESdf7S3cyeWIgSWepK2x4Ht00AynzQ/edit?gid=749664612#gid=749664612]`
