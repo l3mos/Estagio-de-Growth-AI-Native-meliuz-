@@ -1,3 +1,8 @@
+``` 
+Gabriel Eduardo Lemos dos Santos
+Univerdidade Federal de Minas Gerais 
+```
+
 # Analisador de Testes A/B de Cashback — Méliuz (teste técnico Growth AI-Native)
 
 ## TESTE TÉCNICO
@@ -107,8 +112,6 @@ Tudo isso fica registrado na seção "Qualidade dos dados" de cada relatório
 -- Destacando a robustez do código em cada um dos relatórios
 
 ## Planilha de acompanhamento (Google Sheets)
-
-**Configuração do Google Sheets
 
 Este projeto integra totalmente com o Google Sheets para registrar os resultados dos testes A/B em tempo real. A planilha já está conectada ao código e receberá os dados automaticamente quando você executar o script.
 
