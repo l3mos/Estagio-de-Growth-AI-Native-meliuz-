@@ -148,6 +148,7 @@ No terminal, dentro da pasta do projeto:
 # Linux
 export GOOGLE_SHEETS_CREDENTIALS_JSON="growth-ab-analyzer-06346ea220d8.json"
 export GOOGLE_SHEETS_SPREADSHEET_ID="1zbyb6wo8A_x-2ESdf7S3cyeWIgSWepK2x4Ht00AynzQ"
+```
 
 **Link da planilha do Google Sheets:**
-https://docs.google.com/spreadsheets/d/1zbyb6wo8A_x-2ESdf7S3cyeWIgSWepK2x4Ht00AynzQ/edit?gid=749664612#gid=749664612
+(https://docs.google.com/spreadsheets/d/1zbyb6wo8A_x-2ESdf7S3cyeWIgSWepK2x4Ht00AynzQ/edit?gid=749664612#gid=749664612)
